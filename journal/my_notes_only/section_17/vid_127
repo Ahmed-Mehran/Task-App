@@ -1,0 +1,9 @@
+
+###  INSTALLING IMPORTANT PACKAGES
+
+## FIRST WE WILL INSTALL, pip install gunicorn-- THIS IS ESSENTIALLY A WSGI HTTP SEVRER, WHICH IS GOING TO ALLOW US TO BRIDGE
+## THE CONNECTION BETWEEN OUR DJANGO APPLICATION AND RENDER WEB SERVICES
+
+## THEN WE INSTALL, pip install environ, which is going to allow us to create environment variables, which will go ahead
+## and ensure that allof our sensitive data is kept secure, such as our access keys or data
+

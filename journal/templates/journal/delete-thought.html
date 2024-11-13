@@ -1,0 +1,28 @@
+{% extends 'journal/navbar.html' %}  
+
+{% block content %}
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <h3>Want to mark your thought as completed, it will be deleted</h3>
+
+        <br>
+        <br>
+        <form method = "POST" autocomplete="off" >
+
+            {% csrf_token %}
+
+            <br>
+
+            <button class="btn btn-outline-danger btn-md w-100 btn-block p-3" type="submit">  &nbsp; Mark as Completed </button>
+
+        </form>
+        <a href="{% url 'my-thoughts' %}"> Return to thoughts </a>
+
+    </div>
+
+    
+
+    <br>
+{% endblock %}   

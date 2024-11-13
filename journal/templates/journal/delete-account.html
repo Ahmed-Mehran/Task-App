@@ -1,0 +1,32 @@
+{% extends 'journal/navbar.html' %}  
+
+{% block content %}
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <h1>Delete your account</h1>
+        <h7>Are You Sure you Want to delete your account</h7>
+
+        <br>
+        <br>
+        <form method = "POST" autocomplete="off" >
+
+            {% csrf_token %}
+
+
+            <button class="btn btn-outline-danger btn-md w-100 btn-block p-3" type="submit">  &nbsp;Yes, Delete My Account </button>
+
+        </form>
+
+        <br>
+        <a href="{% url 'profile-management' %}" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Return to Edit Profile</a>
+
+        <!-- the above is nothing but bootstrap link to style the return link-->
+
+    </div>
+
+    
+
+    <br>
+{% endblock %}   

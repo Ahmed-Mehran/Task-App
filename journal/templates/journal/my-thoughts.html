@@ -1,0 +1,51 @@
+
+
+
+{% extends 'journal/navbar.html' %}  
+
+
+{% block content %}
+
+    
+
+    <br>
+
+    {% for thoughts in AllThoughts %}
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+
+            {{thoughts.title}}
+
+            <br>
+
+            {{thoughts.content}}
+
+            <br>
+
+            {{thoughts.date_posted}}
+
+            <br>
+            <hr>
+
+            {{thoughts.user}}
+            <br>
+            <br>
+
+
+            <a button type="button" class="btn btn-outline-primary btn-sm"  href="{% url 'update-thought' thoughts.id %}">Update Task</a>
+            
+            <br>
+            <br>
+
+            <a button type="button" class="btn btn-outline-secondary btn-sm"  href="{% url 'delete-thought' thoughts.id %}">Mark Completed</a>
+
+        <br>
+ 
+    </div>
+
+    {% endfor %}
+
+    <br>
+{% endblock %}   
