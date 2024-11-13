@@ -1,8 +1,0 @@
-
-######    CREATE A WEB SERVIE ON RENDER
-
-
-
-## watch the video for this if you revise as this is all hands on render.com 
-
-## AND IF YOU WANT TO SET A CUSTOM DOMAIN, WATCH VID 138 I.E CUSTOM DOMAIN NAME GUIDANCE ON RENDER
